@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.bearcorp</groupId>
+  <artifactId>quickclient</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <connection>scm:git:ssh://git@github.com/rodgerja/quickclient.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/rodgerja/quickclient.git</developerConnection>
+    <url>https://github.com/rodgerja/quickclient.git</url>
+    <tag>quickstart-1.0</tag>
+  </scm>
+
+  <!-- For deployment -->
+  <distributionManagement>
+    <repository>
+      <id>my-releases</id>
+      <!-- CHANGE HERE by your team nexus server -->
+      <url>http://127.0.0.1:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>my-snapshots</id>
+      <!-- CHANGE HERE by your team nexus server -->
+      <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <!-- For downloading dependencies -->
+  <repositories>
+    <repository>
+      <id>mvn-proxy</id>
+      <url>http://127.0.0.1:8081/repository/maven-central/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+</project>
