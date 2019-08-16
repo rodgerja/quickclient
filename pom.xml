@@ -4,7 +4,7 @@
 
   <groupId>com.bearcorp</groupId>
   <artifactId>quickclient</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
 
   <dependencies>
@@ -18,7 +18,7 @@
     <dependency>
       <groupId>com.bearcorp</groupId>
       <artifactId>quickstart</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0.1</version>
     </dependency>
 
   </dependencies>
@@ -59,7 +59,7 @@
     <connection>scm:git:ssh://git@github.com/rodgerja/quickclient.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/rodgerja/quickclient.git</developerConnection>
     <url>https://github.com/rodgerja/quickclient.git</url>
-    <tag>quickstart-1.0</tag>
+    <tag>v1.0.1</tag>
   </scm>
 
   <!-- For deployment -->
